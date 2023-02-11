@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="fcs.ico">
+    <title>Playstation Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a href="#" ></a></li>
+                    <li class="nav-li"><a href="#">Acessórios</a></li>
+                    <li class="nav-li"><a href="#">Controles</a></li>
+                    <li class="nav-li"><a href="#" >Jogos</a></li>
+                </ul>
+            </nav>
+            <img src="./img/menu.png" alt="botao-menu" class="menu-icon" onclick="showMenu()">
+        </div>
+
+
+        <div class="row">
+            <div class="column-1">
+                <h2>PS5 Dualshok</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Controle Original</p>
+                
+                <button class="buy">
+                    <a href="#"><b>Comprar agora<b></a>
+                    
+                </button>
+              
+
+            </div>
+
+            <div class="column-2">
+                <img class="controller" src="./img/controller.png" alt="controle">
+                <div class="color-box"></div>
+                <button class="add-cart">
+                    <img src="./img/add.png" alt="adicionar-ao-carrinho">
+                </button>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/fabiossantoscostas"><img border="0" src="./img/fb.png"></a>
+            <a href="https://www.instagram.com/fabio4.3/"><img border="0" src="./img/ig.png"></a>
+            <a href="https://api.whatsapp.com/send/?phone=5571991227224&text&app_absent=0"><img border="0" src="./img/whatsapp2.png"/></a>     
+        </div>
+
+    </div>
+</body>
+<script>
+    const menulist = document.getElementById("menu-list")
+    menulist.style.maxHeight = "0px"
+    
+    function showMenu(){
+        if(menulist.style.maxHeight == "0px"){
+            menulist.style.maxHeight = "120px"
+        } else {
+            menulist.style.maxHeight = "0px"
+        }
+    }
+
+
+</script>
+
+</html>
